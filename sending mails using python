@@ -1,0 +1,7 @@
+import smtplib
+s=smtplib.SMTP("smtp.gmail.com",587)# smtp session
+s.starttls() # security
+s.login("lasyarithika@gmail.com","lbcqvwgkxjhmkeb")#sender mail.id
+msg=input("enter ur message")
+s.sendmail("lasyarithika@gmail.com","18p61a1238@vbithyd.ac.in",msg)
+s.quit()
